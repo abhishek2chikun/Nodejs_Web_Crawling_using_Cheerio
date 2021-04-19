@@ -25,16 +25,15 @@ rp(options)
         {
         var data={
             
-            Name: $("div[class='jsx-765939686 clg-name-address'] > a > h3").text().split(', Bangalore')[i],
+            CollageName: $("div[class='jsx-765939686 clg-name-address'] > a > h3").text().split(', Bangalore')[i],
             
-            Address : $("div[class='jsx-765939686 clg-head d-flex']").text().split('Karnataka')[i],
+            Location : $("div[class='jsx-765939686 clg-head d-flex']").text().split('Karnataka')[i],
             
+            FirstYearCollegeFees : $("a[class='jsx-765939686 pointer'] > span[class='jsx-765939686 lr-key text-lg text-primary d-block font-weight-bold']").text().split('₹  ')[1+i],
             
-            Fee : $("a[class='jsx-765939686 pointer'] > span[class='jsx-765939686 lr-key text-lg text-primary d-block font-weight-bold']").text().split('₹  ')[1+i],
-            
-            Exam : $("li:nth-child(2) > a > span.jsx-765939686.lr-key.text-lg.text-primary.d-block.font-weight-bold").text().split(' ')[i],  
+            ExamsAccepted : $("li:nth-child(2) > a > span.jsx-765939686.lr-key.text-lg.text-primary.d-block.font-weight-bold").text().split(' ')[i],  
            
-            Rating : $("li:nth-child(3) > a > span.jsx-765939686.lr-key.text-lg.text-primary.d-block.font-weight-bold").text().split('  ')[i],
+            UserRating : $("li:nth-child(3) > a > span.jsx-765939686.lr-key.text-lg.text-primary.d-block.font-weight-bold").text().split('  ')[i],
                 }
         o[key].push(data)
         }
